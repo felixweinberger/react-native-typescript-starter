@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "lib": ["es6"],
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "react-native",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "paths": {
+      "~config/*": ["./src/config/*"],
+      "~contexts/*": ["./src/contexts/*"],
+      "~components/*": ["./src/components/*"],
+      "~libraries/*": ["./src/libraries/*"],
+      "~routes/*": ["./src/routes/*"],
+      "~util/*": ["./src/util/*"],
+      "~reducers/*": ["./src/reducers/*"],
+      "~hoc/*": ["./src/hoc/*"],
+      "~types/*": ["./src/types/*"]
+    },
+    "types": ["jest", "react", "react-native"]
+  },
+  "rules": {
+    "interface-name": false
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    ".eslintrc.js",
+    "__tests__/**/*-test.ts"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "react-native-typescript-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./",
+    "prettier:write": "yarn prettier --write **/*.{js,jsx,ts,tsx,json} && yarn prettier --write *.{js,jsx,ts,tsx,json}"
+  },
+  "dependencies": {
+    "@types/react-test-renderer": "^16.8.3",
+    "react": "16.8.6",
+    "react-native": "0.60.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.60.2",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-typescript": "^4.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "react-native-rename": "2.4.1",
+    "react-test-renderer": "16.8.6",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint"
+    }
+  }
+}
